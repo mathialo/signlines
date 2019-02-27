@@ -1,0 +1,16 @@
+% Package for creating lines with names underneath ment for signing of contracts, etc.
+% Implemented by Mathias Lohne (mathialo@ifi.uio.no).
+% (c) 2019 Mathias Lohne
+% Version 2019-02-27.
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{signlines}[2017/11/03 package signlines]
+
+\newcommand{\signline}[1]{\noindent\begin{minipage}[t]{0.4\linewidth}
+		\noindent \hrule ~\\
+		{\scriptsize #1}
+	\end{minipage}
+	\hfill\vspace{10pt}}
+
+\endinput
+
