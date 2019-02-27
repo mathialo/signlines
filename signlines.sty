@@ -6,11 +6,22 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{signlines}[2017/11/03 package signlines]
 
-\newcommand{\signline}[1]{\noindent\begin{minipage}[t]{0.4\linewidth}
+\newcommand{\singleline}[1]{\noindent\begin{minipage}[t]{0.45\linewidth}
+		\noindent \hrule ~\\
+		{\scriptsize #1}
+	\end{minipage}\\
+	\vspace{10pt}\\}
+
+\newcommand{\doubleline}[2]{\noindent\begin{minipage}[t]{0.45\linewidth}
 		\noindent \hrule ~\\
 		{\scriptsize #1}
 	\end{minipage}
-	\hfill\vspace{10pt}}
+	\hfill
+	\begin{minipage}[t]{0.45\linewidth}
+		\noindent \hrule ~\\
+		{\scriptsize #2}
+	\end{minipage}\\
+	\vspace{10pt}\\}
 
 \endinput
 
